@@ -1,0 +1,207 @@
+\documentclass[11pt,a4paper]{article}
+%\pdfoutput=1
+\usepackage{jheppub}
+%\usepackage{dcolumn}
+\usepackage{multirow}
+\usepackage[section,subsection,subsubsection]{extraplaceins}
+%\usepackage{afterpage}
+%\usepackage{graphicx}
+%\usepackage{caption}
+%\usepackage{subcaption}
+\usepackage[toc,page]{appendix}
+\usepackage[final]{pdfpages}
+\usepackage{filecontents}
+
+\usepackage{graphicx}
+%\usepackage{bookman}
+%\usepackage[paper=A4,pagesize]{typearea}
+%\usepackage[paper=A2,pagesize]{typearea}
+%\usepackage{afterpage}
+%\usepackage{lipsum}% dummy code
+
+%% Hack to make math formulas bold in section titles
+\makeatletter
+\DeclareRobustCommand*{\bfseries}{%
+  \not@math@alphabet\bfseries\mathbf
+  \fontseries\bfdefault\selectfont
+  \boldmath
+}
+\makeatother
+
+
+
+
+\begin{document}
+
+\title{The NEXT-DEMO++ detector}
+
+%\author[a]{V.~Alvarez \thanks{Vicente.Alvarez@ific.uv.es}\emailAdd{vinny@gmail.com},}
+\author[a]{F.~Monrabal,} \emailAdd{francesc.monrabal@ific.uv.es}
+\author[a]{I.~Liubarsky,} \emailAdd{Igor.Liubarsky@ific.uv.es}
+\author[a]{S.~Carcel,} \emailAdd{carcel@ific.uv.es}
+\author[a]{J.J.~G\'omez-Cadenas,} \emailAdd{gomez@mail.cern.ch}
+%\author[a]{A.~Martinez,} \emailAdd{Alberto.Martinez.Perez@ific.uv.es}
+%\author[a]{J.~Rodriguez,} \emailAdd{Javier.Rodriguez@ific.uv.es}
+%\author[b]{C.~Sofka,} \emailAdd{cjsofka@physics.tamu.edu}
+
+
+\affiliation[a]{Instituto de F\'isica Corpuscular (IFIC), CSIC \& Universidad de Valencia \\
+46980 Valencia, Spain}
+%\affiliation[b]{ITexas A\& M University - Department of Physics and Astronomy
+%College Station, 77843-7717 TX, 4242 TAMU, USA}
+
+\abstract{}
+
+
+
+
+
+\maketitle
+
+%\tableofcontents
+
+%\title[Sample title]{NEXT-DEMO++}
+
+\input{src/Intro.tex}
+\input{src/PressureVessel.tex}
+\input{src/GasSystem.tex}
+\input{src/FC.tex}
+\input{src/ElectricalPower.tex}
+\input{src/ExperimentalArea.tex}
+\input{src/Safety.tex}
+\input{src/Attachements.tex}
+
+
+\end{document}
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Time projection chamber} \label{sec:TPC}
+%%%%
+%Three metallic wire grids --- referred to as \emph{cathode}, \emph{gate} and \emph{anode} --- define the two active regions of the chamber (see figure~\ref{fig:TPC}): the 30 cm long \emph{drift region}, between cathode and gate; and the 0.5 cm long \emph{EL region}, between gate and anode. Gate and anode were built using stainless-steel meshes with 88\% open area (30-$\mu$m diameter wires, 50 wires$/$inch) clamped in a tongue-and-groove circular frame with a tensioning ring that is torqued with set screws to achieve the optimum tension. The cathode was built in a similar fashion by clamping parallel wires 1~cm apart into another circular frame.  
+%
+%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%\includegraphics[width=0.75\textwidth]{img/FieldCage.pdf}
+%\caption{External view of the time projection chamber mounted on one end-cap. The approximate positions of the different regions of the TPC are indicated.} \label{fig:TPC}
+%\end{figure}
+%%%%%%%%%%%
+%
+%The electric field in the TPC is created by supplying a large negative voltage to the cathode then degrading it across the drift region using a series of metallic rings of 30 cm diameter spaced 5 mm apart and connected via 0.5~G$\Omega$ resistors. The rings were manufactured by cutting and machining aluminum pipe. The gate is at negative voltage so that a moderate electric field --- typically of 2.5 to 3 $\mathrm{kV~cm^{-1}~bar^{-1}}$ --- is created between the gate and the anode, which is at ground.
+%A \emph{buffer region} of 10 cm between the cathode and the energy plane protects this from the high-voltage by degrading it safely to ground potential.
+%
+%The high voltage is supplied to the cathode and the gate through custom-made high-voltage feed-throughs (HVFT), shown in figure~\ref{fig:HVFT}, built pressing a stainless-steel rod into a Tefzel (a plastic with high dielectric strength) tube, which is then clamped using plastic ferrules to a CF flange. They have been tested to high vacuum and 100 kV without leaking or sparking. 
+%
+%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%\includegraphics[scale=.7]{img/HVFT.jpg} 
+%\caption{The NEXT-DEMO high-voltage feed-through, designed and built by Texas A\&M.}
+%\label{fig:HVFT}
+%\end{figure}
+%%%%%%%%%%%
+%
+%A set of six panels made of PTFE (Teflon) are mounted inside the electric-field cage forming a \emph{light tube} of hexagonal cross section (see figure~\ref{fig:LightTube}) with an apothem length of 8 cm. PTFE is known to be an excellent reflector in a wide range of wavelengths \cite{Silva:2009ip}, thus improving the light collection efficiency of the detector. In a second stage, the panels were vacuum-evaporated with TPB --- which shifts the UV light emitted by xenon to blue ($\sim430$~nm) --- in order to study the  improvement in reflectivity and light detection. Figure~\ref{fig:LightTube} (bottom panel) shows the light tube illuminated with a UV lamp after the coating.
+%
+%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%\includegraphics[height=6.75cm]{img/LightTube.jpg}
+%\includegraphics[height=6.75cm]{img/LightTubeBlue.JPG}  
+%\caption{View of the light tube from the position of the tracking plane. Top: The meshes of the EL region can be seen in the foreground, and in the background, at the end of the light tube, the PMTs of the energy plane are visible. Bottom: The light tube of NEXT-DEMO illuminated with a UV lamp after being coated with TPB.} \label{fig:LightTube}
+%\end{figure}
+%%%%%%%%%%%
+%
+%Six bars manufactured from PEEK, a low outgassing plastic, hold the electric-field cage and the energy plane together. The whole structure is attached to one of the end-caps using screws, and introduced inside the vessel with the help of a rail system. All the TPC structures and the HVFT were designed and built by Texas A\&M.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%\section{Detection planes} \label{sec:DetPlanes}
+%%%%
+%%NEXT-DEMO has been operating under two different configurations for the tracking plane. One with a tracking plane with PMTs and a second one with SiPMs. For both configurations the energy plane was not altered using exactly the same PMTs.
+%
+%\section{Energy Plane}\label{sec:EnergyPlane}
+%In NEXT-DEMO, the energy plane (see figure~\ref{fig:DEMO_EnergyPlane}) is equipped with 19 Hamamatsu R7378A photomultiplier tubes. These are 1-inch, pressure-resistant (up to 20 bar) PMTs with acceptable quantum efficiency ($\sim 15$\%) in the VUV region. The resulting photocathode coverage of the energy plane is about 39\%. The PMTs are inserted into a PTFE holder following a hexagonal pattern. A grid, known as \emph{shield} and similar to the cathode but with the wires spaced 0.5~cm apart, is screwed on top of the holder and set to 500 V. As explained above, this protects the PMTs from the high-voltage set in the cathode, and ensures that the electric field in the 10-cm buffer region is below the EL threshold.
+%
+%The PMTs are connected to custom-made electrical bases that are used as voltage dividers, and also allow the extraction of the signal induced in the PMTs. This requires a total of 38 cables inside the pressure vessel connected via feed-throughs.  
+%
+%
+%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%\includegraphics[height=6.5cm]{img/EnergyPlane.jpg}
+%%\includegraphics[height=6.5cm]{img/TrackingPlane.jpg}
+%\caption{The energy plane of NEXT-DEMO equipped with 19 Hamamatsu R7378A PMTs. The wires in front of the PMTs are the so called "shield" to fix the voltage in front of the PMTs and protect them from the Cathode Voltage.} \label{fig:DEMO_EnergyPlane}
+%\end{figure}
+%%%%%%%%%%%
+%
+%The goals of the PMT plane are first to measure the energy of the events recorded as it is related with total amount of light detected by the PMTs; and second, to detect the primary scintillation signal produced by each event which is fundamental to position the event inside the field cage and can be used also as a trigger signal. More details about the energy measurements performed by the PMT plane are dscribed in chapter \ref{chap:DEMOPMTResults}.
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\subsection{Energy Plane Electronics} \label{sec:EnergyElectronics}
+%%%%
+%The two optical signals in the NEXT detector concept have very different scales, and the photomultipliers and their front-end electronics must be ready to handle both. Primary scintillation results in weak (a few photoelectrons per photomultiplier) and fast (the bulk of the signal comes in about 20 ns) signals, whereas the secondary scintillation --- that is, the EL-amplified ionization --- is intense (hundreds to thousands of photoelectrons per PMT) and slow (several microseconds long). 
+%
+%The gain of the PMTs in the NEXT-DEMO energy plane was adjusted to around $5\times10^6$ to place the mean amplitude of a single photoelectron pulse well above electronic system noise.
+%
+%%and approximately half that for the tracking plane since they record the direct secondary-scintillation light produced in the EL region and, as such, would have a higher probability of saturation at the same gain as those of the cathode.
+%
+%The PMTs produce fast signals (less than 5~ns wide) making the shaping of the detector output necessary so that during the digitization with the 40MHz ADC the signal is sampled well enough to have a good estimation of the charge. This process also performs the important function of eliminating high frequency noise.
+%
+%The design uses a single amplification stage based on a fully differential amplifier THS4511, which features low noise ($2~\mathrm{nV/\sqrt{Hz}}$) and provides enough gain to mantain the signal amplitude above the noise level after shaping in the following stage. Amplification is followed by a passive RC filter with a cut frequency of 800 kHz. This filtering obtains the desired effect of stretching the signal to allow the acquisition of many samples per single photo-electron.
+%The front-end circuit for NEXT-DEMO was implemented in 7 channel boards and connected via HDMI cables to 12-bit 40-MHz digitizer cards. These digitizers are read out by the FPGA-based DAQ modules (FEC cards) that buffer, format and send event fragments to the DAQ PCs. As for the FEC card, the 16-channel digitizer add-in card was designed in a joint effort between CERN and the NEXT Collaboration within the RD-51 program \cite{Martoiu:2011}. These two cards are edge mounted to form a standard 6U220 mm Eurocard. An additional FEC module with a different plug-in card is used as trigger module. Besides forwarding a common clock and commands to all the DAQ modules, it receives trigger candidates from the DAQ modules, runs a trigger algorithm in the FPGA and distributes a trigger signal. The trigger electronics also accept external triggers for detector calibration purposes.
+%
+%
+%
+%\section{Tracking Plane}\label{sec:TrackingPlane}
+%
+%\subsection{Tracking Plane with PMTs}\label{subsec:TrackingPlanePMT}
+%As mentioned already, the first tracking plane of the NEXT-DEMO detector also uses  19 Hamamatsu R7378A PMTs, as shown in figure~\ref{fig:TrackingPMTs}, but operated at lower gain. They are also held by a PTFE honeycomb, mirroring the energy plane. The PMT windows are located 2 mm away from the anode mesh. Position reconstruction is based on energy sharing between the PMTs, being therefore much better than the distance between PMTs (35 mm from center to center).
+%
+%Position reconstruction with PMTs was used in the first stages of the detector because it allowed for a much simpler commisioning and understanding of the energy plane, trigger and other aspects of the detector with $\sim10$ times less number of channels to debug. Of course, reconstruction of the topology in detail with PMTs is not possible but a good average position reconstruction is easily achieved (\ref{sec:EnergyResolution} ) and fiducialization of the events is  possible.
+%
+%
+%
+%%%%%%%%%%%
+%\begin{figure}
+%\centering
+%%\includegraphics[height=6.5cm]{img/EnergyPlane.jpg}
+%\includegraphics[height=6.5cm]{img/DEMO_TrackingPlane.jpg}
+%\caption{The tracking plane of NEXT-DEMO in the PMTs configuration, equipped with 19 Hamamatsu R7378A PMTs.} \label{fig:TrackingPMTs}
+%\end{figure}
+%%%%%%%%%%%
+%
+%
+%
+%\subsection{Tracking plane with SiPMs}\label{subsec:TrackingPlaneSiPM}
+%
+%\begin{figure}
+%  \begin{center}
+%  \includegraphics[width=0.475\textwidth,height=5cm]{img/DICE_Front.jpeg}
+%  \includegraphics[width=0.475\textwidth,height=5cm]{img/DICE_back.jpeg}
+%  \includegraphics[width=0.475\textwidth,height=5cm]{img/DICE_Plane_General.jpeg}
+%  \includegraphics[width=0.475\textwidth,height=5cm]{img/DICE_Coated.jpeg}
+%  \end{center}
+%  \caption{Details of the \textit{CuFlon}$^{\circledR}$ boards and their mounting in NEXT-DEMO.}
+%  \label{fig:DICEs}
+%\end{figure}
+%The arguments discussed in section \ref{sec:TOPO} led to the choice of a tracking plane 
+%for NEXT-DEMO instrumented with SiPMs at a sensor pitch of 1~cm. The plane consists of 256 Hamamatsu S10362-11-050P SiPMs distributed between 4 boards, each with 64 sensors (see figure~\ref{fig:DICEs}) and is positioned 2~mm behind the EL production region. The active area of a sensor is 1~mm$^2$ comprised of pixels of side 50~$\mu$m. Operating at a bias voltage of 73~V results in a gain of $\sim7.5x10^5$ at room temperature (precise calibration described in section~\ref{subsec:TrackCali}) and dark current at the level of 0.2-0.3 photoelectrons$~\mu$s$^{-1}$.
+%
+%The SiPMs are mounted on multilayer \emph{CuFlon$^{\circledR}$} PCBs (PTFE substrate with copper layers, gold plated). Each board is supplied with one bias voltage via a FPC (Flat Printed Circuit) kapton cable which also extracts the sensor signals and the readings of a thermister positioned next to the board. In order to maintain the nominal supply voltage of the sensors and reduce detector dead time, 4 tantalum capacitors are connected to each board and supply the sensors with the required voltage after read-out.
+%
+%
+%\subsubsection{Coating}
+%\label{sec:coating}
+%Since the SiPMs are not directly sensitive at the emission wavelength of Xe (170~nm), it is necessary to use a wavelength shifting coating. TPB has been used since its emission properties match well with the sensitivity of the SiPMs and because it was used to coat the light tube. The SiPM PCBs (DICE boards) were coated to a TPB thickness of 0.1~mg~cm$^{-2}$ by evaporation under high vacuum using the techniques described in detail in~\cite{Alvarez:2012ub}. The peak of the emission spectrum of TPB (430~nm) matches the region of highest quantum efficiency of the SiPMs well and at the selected TPB thickness the transmittance of the shifted light is $> 96\%$ \cite{Alvarez:2012ub}. While higher transmittance is possible with a thinner coating, the variance of the effective conversion efficiency tends to increase. The thickness chosen is, as such, a good compromise between these two competing considerations. 
+%%\begin{figure}
+% % \begin{center}
+%  %  \includegraphics[width=0.445\textwidth]{img/DICE_Coated.jpeg}
+%  %\end{center}
+%  %\caption{A DICE fluorescing under UV light.} 
+%  %\label{fig:DICE_coated}
+%%\end{figure}
+%
+%%JJ ---> discussion of 1 cm etc, should be rather clear from added section

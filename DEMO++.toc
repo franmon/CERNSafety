@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Pressure vessel}{3}{section.2}
+\contentsline {section}{\numberline {3}Gas system}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Cryo-recovery protocol}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Gas Mixtures}{7}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Technical and safety specifications}{8}{subsection.3.3}
+\contentsline {section}{\numberline {4}Field Cage}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}Drift region}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Buffer region}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}High voltage feedthroughs}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Cathode grid}{10}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Electroluminescent region}{11}{subsection.4.5}
+\contentsline {section}{\numberline {5}Electrical Power}{12}{section.5}
+\contentsline {section}{\numberline {6}Experimental area distribution}{14}{section.6}
+\contentsline {section}{\numberline {7}Safety issues}{16}{section.7}
+\contentsline {subsection}{\numberline {7.1}Pressure Risks}{16}{subsection.7.1}
+\contentsline {subsubsection}{\numberline {7.1.1}Pressure Vessel}{16}{subsubsection.7.1.1}
+\contentsline {subsubsection}{\numberline {7.1.2}Gas system}{16}{subsubsection.7.1.2}
+\contentsline {subsubsection}{\numberline {7.1.3}Recovery Bottles}{16}{subsubsection.7.1.3}
+\contentsline {subsubsection}{\numberline {7.1.4}Safety systems implemented}{16}{subsubsection.7.1.4}
+\contentsline {subsection}{\numberline {7.2}Oxygen displacement}{16}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}High Voltage safety}{17}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Fire}{17}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Cryogenics}{17}{subsection.7.5}
+\contentsline {section}{\numberline {A}List of attachments}{17}{appendix.A}
