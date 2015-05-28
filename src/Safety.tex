@@ -4,22 +4,42 @@ In this section we review the main issues related with safety when operating and
 
 \subsection{Pressure Risks}
 
-The components that are related with pressure risks are the pressure vessel and the gas system. Both have been operating for about three years with no major problems.
+The components that are related with pressure risks are the pressure vessel and the gas system. Both have been operating for about three years at the IFIC laboratory with no major problems.
 
 \subsubsection{Pressure Vessel}
-The engineering calculations and the hydrostatic test results on the vessel are attached to this document. These documents show that the operation of the NEXT-DEMO pressure vessel is safe and it doesn't represent a risk for its operation.
+The engineering calculations and the hydrostatic test results on the vessel are attached to this document. These documents show that the operation of the NEXT-DEMO pressure vessel is safe. Here we summarise the main results of the PV calculations
+
+The thickness of the shell = 1.926 mm(THE SHELL THICKNESS OF NEXTDEMO IS3 mm)
+
+The thickness of the flat head = 18.23(THE FLAT HEAD THICKNESS OF NEXTDEMO IS 28.5 mm)
+
+To work at 10 bar, the ASME calculation requires:
+\begin{enumerate}
+\item A thickness of the cylindrical shell of 1.926 mm.
+\item A thickness of the main flanges of 15.99 mm.
+\item A thickness of the flat heads of 21.8 mm
+\end{enumerate}
+
+The corresponding parameters for NEXT-DEMO are:
+\begin{enumerate}
+\item Thickness of the cylindrical shell of 3 mm (50\% in thickness over requirement).
+\item A thickness of the main flanges of 28.5 mm (close to 50\% over requirement).
+\item A thickness of the flat heads of 28.5 mm (well above requirement).
+\end{enumerate}
+
+The result of the calculations, together with the success of the hydrostatic test and the absence of any incident during 3 years of operation indicate that the hazard associated with the pressure vessel is negligible. 
 
 \subsubsection{Gas system}
-The gas system is composed of standard swagelock components, all of them with the european certification for safety (CE mark). The list and scheme of the different components is shown in the correspondind attached documents. The gas system does not represent a significant risk for the operation of the NEXT-DEMO detector.
+The gas system is composed of standard swagelock components, all of them with the european certification for safety (CE mark). The list and scheme of the different components is shown in the corresponding attached documents. The gas system does not represent a significant risk for the operation of the NEXT-DEMO detector.
 
 \subsubsection{Recovery Bottles}
 
-The bottles designed for the cryogenic recovery of the Xenon from the main volume have been tested for pressure and they are safe for operation. The document of such test are included in the attahments.
+The bottles designed for the cryogenic recovery of the Xenon from the main volume have been tested for pressure and they are safe for operation. The document of such test are included in the attachments.
 
 \subsection{Oxygen displacement}
-
-When operating with any gas we need to understand the effect that a total failure of the system will have on the amount of oxygen in the experimental area. The amount of Xenon used in the NEXT-DEMO detector is around 1kg, for our safety estimations we will assume 1.5kg so we are in a very pessimistic scenario.
-In case of a big leak in gas system all the Xenon will be liberated into the experimental area. Operating at 10 bar and assuming a leak with a size of a 1/4" inch hole, the flow will be of the order of 0.5 $m^3/min$. The volume of 1.5kg of Xenon at 1 bar represents a volume of 8.84 cubic meters, it will take about 15 miutes to release the whole volume to the atmosphere. As Xenon is much denser than air it will stay at the bottom side. The height of the volume that Xenon will occupy is defined by the total amount of Xenon and the surface of the experimental area. As the surface of the experimental area is 25 square meters, the total height occupied by the Xenon will be 0.35 meters assuming the experimental area is sealed. That should not represent any danger for working in the area but oxygen monitors, either individual or general, are recomended to reduce this risk. Also, the slow control system switch off the pump and locks and send an e-mail giving information of a pressure drop. A light alarm can be installed in the experimental area and connected to the slow control if necessary.
+This appear to be the only relevant case that requires a risk assessment study, which is presented in section 8. 
+%When operating with any gas we need to understand the effect that a total failure of the system will have on the amount of oxygen in the experimental area. The amount of Xenon used in the NEXT-DEMO detector is around 1kg, for our safety estimations we will assume 1.5kg so we are in a very pessimistic scenario.
+%In case of a big leak in gas system all the Xenon will be liberated into the experimental area. Operating at 10 bar and assuming a leak with a size of a 1/4" inch hole, the flow will be of the order of 0.5 $m^3/min$. The volume of 1.5kg of Xenon at 1 bar represents a volume of 8.84 cubic meters, it will take about 15 miutes to release the whole volume to the atmosphere. As Xenon is much denser than air it will stay at the bottom side. The height of the volume that Xenon will occupy is defined by the total amount of Xenon and the surface of the experimental area. As the surface of the experimental area is 25 square meters, the total height occupied by the Xenon will be 0.35 meters assuming the experimental area is sealed. That should not represent any danger for working in the area but oxygen monitors, either individual or general, are recomended to reduce this risk. Also, the slow control system switch off the pump and locks and send an e-mail giving information of a pressure drop. A light alarm can be installed in the experimental area and connected to the slow control if necessary.
 
 
 %\subsection{Gas release scenarios}
@@ -30,32 +50,31 @@ In case of a big leak in gas system all the Xenon will be liberated into the exp
 %During normal operation the part with a highest danger to fail is the pump diaphragm. According to the company the diphragm should be replaced avery 6 months. In our experience it is better to replace it every 4 months of continuous operation so we reduce the risk of failure.
 
 
-
-
 \subsubsection{Safety systems implemented}
 A slow control system has been developed in order to monitor the pressure in different parts of the gas system and pressure vessel. The slow control can start/stop the re-circulation pump and also block the system in case a leak is detected so the gas remains inside the system. The slow control represents an extra help for improving the safety.
 
-Moreover, the gas system has two bursting disks for a controled break in case of over-preassure. One in the vacuum side for protecting the vacuum instruments (turbo molecular pump, RGA,...) and one in the pressure side that breaks at 13 bar to prevent any high over-pressure of the system.
+Moreover, the gas system has two bursting disks for a controlled break in case of over-pressure. One in the vacuum side for protecting the vacuum instruments (turbo molecular pump, RGA,...) and one in the pressure side that breaks at 13 bar to prevent any high over-pressure of the system.
 
 
 
 \subsection{High Voltage safety}
 
-The high voltage to create the electric field in TPC is generated by two High voltages modules (\textit{FUG HCP 140-100000} and \textit{FUG HCP 0-35000)}. Those modules have a fine tunning potentiometer for both voltage and current, allowing us to limit the total power and current produced byt the module. Moreover, they can be controled remotely using an IP connexion. During normal operation the modules are always controled using a special Slow Control software developed by the IFIC grup using LabView$^{\textcopyright}$ libraries. That prevents any errors in the manipulation of the modules and also helps with fast response in case of any failure.
-The documentation related with the modules can be found in the folder "HHV Power Supplies"
-Moreover, there is no direct acces to the any point that is at high voltage, all of them will be either inside the detector or inside the modules. That shows that the high voltage operation does not represent a risk for the operation of the detector.
+The high voltage to create the electric field in the TPC is generated by two High Voltage modules (\textit{FUG HCP 140-100000} and \textit{FUG HCP 0-35000)}. These modules have a potentiometer which permits to control the total power and current produced by the module. Such control can be carried out locally and remotely  using an IP connexion. The modules are always controlled using a special Slow Control software developed by the IFIC group using LabView$^{\textcopyright}$ libraries. That prevents any errors in the manipulation of the modules and also provides a fast response in case of any failure.
+
+The documentation related with the modules can be found in the folder "HHV Power Supplies".
+
+Moreover, there is no direct access to the any point that is at high voltage, all of them will be either inside the detector or inside the modules. Furthermore, although the voltages are high, the resistors in the electric system are huge. As a consequence the current circulating is very small (in the range of the $\mu$A) and poses no risk of electrocution. Consequently the high voltage  does not represent a hazard for the operation of the detector.
 
 
 \subsection{Fire}
 
-As the gases used in the operation of NEXT-DEMO are not flamable the only system that is affected by the risk of fire is the electronics. The total power is not very high (see section \ref{sec:ElecPow}) and the electronics has been operating for a long time without any problem, we consider that the risk of having fire in the experimental area is minimum. In case that a extinguisher system is needed we can design a system using extinguishers directly in the electronics racks that are activated using a serie of smoke detectors. In that case we will recommend powder extinguisher as they can be used in the electronics and at the same time they can not produce a problem related with air displacement like the $CO_2$ extinguishers.
-
+As the gases used in the operation of NEXT-DEMO are not flammable. The only system that is affected by the risk of fire is the electronics. The total power is not very high (see section \ref{sec:ElecPow}) and the electronics has been operating for a long time without any problem, we consider that the risk of having fire in the experimental area is minimum. However, we propose the installation of a system of fire extinguishers located directly in the electronics racks, and which are activated using a serie of smoke detectors. Such system is currently being designed for the NEXT-100 detector at the LSC and needs to be ready by July 2015. We will duplicate one such system to be installed in the DEMO++ power ranks. 
 
 \subsection{Cryogenics}
 
-For the recovery of the Xenon to the recovery bottles the use of liquid Nitrogen is needed. The recovery bottles are in a thermally insolated container that on one hand makes the process more efficient and also prevents Nitrogen to spill in the experimental area.
+For the recovery of the Xenon to the recovery bottles the use of liquid Nitrogen is needed. The recovery bottles are in a thermally isolated container that on one hand makes the process more efficient and also prevents Nitrogen to spill in the experimental area.
 
-When using liquid Nitrogen indivual protection such as gloves and face protection is required. 
+The procedure requires to take the usual safety measurements when working with liquid nitrogen. The area will be emptied of any person not related with the operation of filling the cryogenic containers which is done is a short period (about half an hour). The persons operating the system will wear individual protection such as gloves and face protection.  
 
 
 
